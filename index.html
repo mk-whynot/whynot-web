@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhyNot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Header -->
+  <header class="bg-black text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">WhyNot</h1>
+    <nav class="space-x-4">
+      <a href="#home" class="hover:underline">Domů</a>
+      <a href="#shop" class="hover:underline">Nabídka</a>
+      <a href="#about" class="hover:underline">O mně</a>
+      <a href="#contact" class="hover:underline">Kontakt</a>
+      <a href="#login" class="hover:underline">Přihlášení</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="p-10 text-center">
+    <h2 class="text-3xl font-semibold mb-4">Vítejte na WhyNot</h2>
+    <p>Osobní blog a obchod s vášní.</p>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop" class="p-10">
+    <h2 class="text-2xl font-bold mb-4">Nabídka</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="border p-4 rounded shadow">
+        <h3 class="font-semibold text-lg">Produkt 1</h3>
+        <p>Popis produktu.</p>
+        <p class="text-green-600 font-bold">199 Kč</p>
+        <button class="mt-2 px-4 py-2 bg-blue-600 text-white rounded">Koupit</button>
+      </div>
+      <!-- Další produkty -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="p-10 bg-gray-100">
+    <h2 class="text-2xl font-bold mb-4">O mně</h2>
+    <p>Jmenuji se Chris a tohle je můj příběh...</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-10">
+    <h2 class="text-2xl font-bold mb-4">Kontakt</h2>
+    <form class="space-y-4 max-w-md">
+      <input type="text" placeholder="Jméno" class="w-full border p-2 rounded" />
+      <input type="email" placeholder="Email" class="w-full border p-2 rounded" />
+      <textarea placeholder="Zpráva" class="w-full border p-2 rounded"></textarea>
+      <button class="bg-black text-white px-4 py-2 rounded">Odeslat</button>
+    </form>
+  </section>
+
+  <!-- Login Section -->
+  <section id="login" class="p-10 bg-gray-100">
+    <h2 class="text-2xl font-bold mb-4">Přihlášení / Registrace</h2>
+    <form class="space-y-4 max-w-md">
+      <input type="email" placeholder="Email" class="w-full border p-2 rounded" />
+      <input type="password" placeholder="Heslo" class="w-full border p-2 rounded" />
+      <button class="bg-blue-600 text-white px-4 py-2 rounded">Přihlásit se</button>
+      <p class="text-sm">Nemáte účet? <a href="#" class="text-blue-600 underline">Zaregistrujte se</a></p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white p-4 text-center">
+    &copy; 2025 WhyNot. Všechna práva vyhrazena.
+  </footer>
+</body>
+</html>
